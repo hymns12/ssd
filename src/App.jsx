@@ -191,7 +191,7 @@ function App() {
                                                             </Dialog.Root></Flex>
                                                     case x.isOwned && !x.ownedByMe:
                                                         return <Flex direction={"column"}><Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="my-2 underline">View on Opensea</Link>
-                                                            <Text>Owner: {x.NFTOwner.toString().slice(0, 5) + "..." + x.NFTOwner.toString().slice(-5)}</Text></Flex>;
+                                                            <Text>Owner: {x.NFTOwner?.toString().slice(0, 5) + "..." + x.NFTOwner?.toString().slice(-5)}</Text></Flex>;
                                                     default:
                                                         return <>
                                                             <Dialog.Root>
