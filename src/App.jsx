@@ -77,7 +77,7 @@ function App() {
                                             Description: {x.description}
                                         </Text>
                                         <Flex direction={"column"}>
-                                            <Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="underline my-2">View on Opensea</Link>
+                                            <Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="underline my-2 bg-black p-2 text-white rounded-md">View on Opensea</Link>
                                             <Dialog.Root>
                                                 <Dialog.Trigger>
                                                     <Button className="button">Transfer</Button>
@@ -148,7 +148,7 @@ function App() {
                                                 switch (true) {
                                                     case x.isOwned && x.ownedByMe:
                                                         return <Flex direction={"column"}>
-                                                            <Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="my-2 underline">View on Opensea</Link>
+                                                            <Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="my-2 underline bg-black p-2 rounded-md text-slate-300">View on Opensea</Link>
                                                             <Dialog.Root>
                                                                 <Dialog.Trigger>
                                                                     <Button className="button">Transfer</Button>
@@ -187,7 +187,7 @@ function App() {
                                                                             }}>Transfer</Button>
                                                                         </Dialog.Close>
                                                                     </Flex>
-                                                                </Dialog.Content>
+                                                                </Dialog.Content>   
                                                             </Dialog.Root></Flex>
                                                     case x.isOwned && !x.ownedByMe:
                                                         return <Flex direction={"column"}><Link href={`${import.meta.env.VITE_opensea_url}/${index}`} className="my-2 underline">View on Opensea</Link>
