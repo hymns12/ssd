@@ -1,5 +1,6 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
+
 export const SUPPORTED_CHAIN = 80001;
 
 const mumbai = {

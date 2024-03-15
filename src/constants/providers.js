@@ -1,4 +1,6 @@
 import { ethers } from "ethers";
+import Abi from "./../constants/erc721.json";
+
 
 // read only provider pointing to sepolia. It allows read only access to the sepolia blockchain
 export const readOnlyProvider = new ethers.JsonRpcProvider(
